@@ -1,0 +1,26 @@
+## 📄 team-info.json
+```json
+{
+  "teamName": "Your Team Name Here",
+  "members": [
+    {
+      "name": "Team Member 1",
+      "github": "github-username-1",
+      "role": "Team Leader"
+    },
+    {
+      "name": "Team Member 2",
+      "github": "github-username-2",
+      "role": "Meme Creator"
+    },
+    {
+      "name": "Team Member 3",
+      "github": "github-username-3",
+      "role": "Git Expert"
+    }
+  ],
+  "contact": "team-leader@example.com",
+  "organization": "Your School/Company",
+  "funFact": "We love debugging at 3 AM!",
+  "registrationDate": "2024-01-01"
+}

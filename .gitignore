@@ -1,0 +1,20 @@
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+
+# Large Files (keep memes under 5MB)
+*.psd
+*.ai
+*.sketch
