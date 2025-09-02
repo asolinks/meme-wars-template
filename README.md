@@ -251,4 +251,4 @@ Your team's meme empire awaits! Start creating, collaborating, and competing. Ma
 
 ---
 
-*Built with ❤️ for the Get-Gitty Workshop*
+*Built with ❤️ for the Get-Gitty Workshop*# meme-wars-template
