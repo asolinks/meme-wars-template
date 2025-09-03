@@ -118,9 +118,7 @@ Once it does, your team's card will change from *"Meme Loading..."* to displayin
 - **Video Meme:** Embed a video file from your assets folder.  
 
 ### Getting Help
-- **Git/GitHub Help:** [GitHub Docs](https://docs.github.com/)  
-- **HTML/CSS/JS Help:** [MDN Web Docs](https://developer.mozilla.org/)  
-- Or ask your workshop facilitators!  
+- ask your workshop facilitators!  
 
 ---
 
@@ -153,10 +151,9 @@ Just add more HTML files (e.g., `meme2.html`) and link to them from your main `i
 - Please keep content **appropriate for all audiences**.  
 - The use of **web technologies (HTML, CSS, JS)** is encouraged!  
 - You may use **libraries and frameworks** if you wish.  
-- The facilitators' decisions are **final**.  
 
 ---
 
-🎉 Good luck, have fun, and may the best meme win!  
+🎉 Good luck, have fun, and may the best meme win Odin's sacred runes!  
 
 **Remember: In Git We Trust! 🚀**
