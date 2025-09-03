@@ -1,254 +1,128 @@
-# 🎨 Meme Wars Template 🔥
+🎮 Get Gitty Meme Wars - Template Repository
+Welcome to the Get Gitty Meme Wars! This is your starter template for creating and submitting your hilarious meme. This guide will walk you through the entire process, from forking this repo to seeing your meme live on the competition website.
 
-> **Welcome to Meme Wars!** Your team's ultimate battleground for creating and sharing epic memes during the Get-Gitty Workshop.
+🚀 Quick Start Guide
+1. Fork This Template
+You must do this first! Click the "Use this template" button at the top of this page to create your own copy under your GitHub account.
 
-When you fork this repository, it magically transforms into your team's live website, automatically published with **GitHub Pages**. Your site will be showcased live on the **Get-Gitty Event Page** alongside all competing teams! 🚀
+Important: When asked for a Repository name, you MUST name it exactly as provided during your team registration. It will look like this:
+<your-team-name>-meme-war
 
----
+Example: If your team name is "The Git Gurus", your repo must be named the-git-gurus-meme-war.
 
-## 🚀 Quick Start Guide
+2. Clone Your New Repository
+Clone your newly forked repo to your local machine to start working on it.
 
-### Step 1: Create Your Repository
-1. Click the green **"Use this template"** button at the top of this repo
-2. Select **"Create a new repository"**
-3. Name it exactly as suggested by the registration system:
-   ```
-   <team-slug>-meme-war
-   ```
-   **Example:** `git-happens-meme-war`
+bash
+# Replace YOUR-USERNAME and YOUR-REPO-NAME with your details
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+cd YOUR-REPO-NAME
+3. Create Your Meme Masterpiece!
+Now for the fun part. Edit the files in this template to create your meme.
 
-### Step 2: Enable GitHub Pages
-1. Navigate to your new repo: `https://github.com/<your-username>/<team-slug>-meme-war`
-2. Click **⚙️ Settings** → **Pages**
-3. Under **Build and deployment**:
-   - **Source:** Deploy from a branch
-   - **Branch:** `main`
-   - **Folder:** `/ (root)`
-4. Save and wait 1-2 minutes
-5. Your live site will be available at:
-   ```
-   https://<your-username>.github.io/<team-slug>-meme-war/
-   ```
+index.html: This is your main meme page. Add your HTML, CSS, and any JavaScript here.
 
-### Step 3: Start Creating Memes
-1. Create your meme files in the `memes/` folder
-2. Add images to `assets/images/` or your personal image folder
-3. Update `script.js` to include your new meme pages
-4. Commit & push → your live site updates automatically! ✨
+styles.css: Add your custom styles here to make your meme look awesome.
 
----
+/assets folder: Place any images, GIFs, or other media you want to use in here.
 
-## 📂 Project Structure
+Be creative! Use any web technology you like. The only rule is that it must all be contained within your forked repository.
 
-```
-meme-wars-template/
-├── 📄 index.html              # Entry point (rotates through memes)
-├── 🎨 style.css               # Shared team styles
-├── ⚙️  script.js              # Meme rotator logic
-├── 📖 README.md               # This guide
-├── 📁 memes/                  # 👈 Your memes go here!
-│   ├── 📁 leader/             # Team leader's memes
-│   │   ├── 001-first-meme.html
-│   │   ├── 002-git-commit.html
-│   │   └── 📁 images/         # Leader's personal images
-│   │       └── team-spirit.gif
-│   ├── 📁 alice/              # Alice's meme collection
-│   │   ├── 001-debugging.html
-│   │   ├── 002-merge-conflict.html
-│   │   └── 📁 images/         # Alice's images
-│   │       ├── bug-hunt.png
-│   │       └── success-kid.jpg
-│   └── 📁 bob/                # Bob's memes
-│       ├── 001-deploy-friday.html
-│       └── 📁 images/         # Bob's images
-│           └── ship-it.png
-└── 📁 assets/                 # Shared team resources
-    ├── 📁 images/             # Common team images
-    │   ├── team-logo.png
-    │   └── workshop-banner.jpg
-    └── 📁 fonts/              # Custom fonts (optional)
-```
+4. Push Your Code to GitHub
+Once you're happy with your meme, it's time to send it to GitHub.
 
----
+bash
+# Add all your changed files to the staging area
+git add .
 
-## ✨ Meme Creation Rules
+# Commit your changes with a descriptive message
+git commit -m "Created our amazing meme! 🚀"
 
-### 🏷️ Naming Convention
-To keep things organized and avoid conflicts:
-
-1. **Create your personal folder:**
-   ```
-   memes/<your-github-handle>/
-   ```
-   Example: `memes/alice/`
-
-2. **Name your meme files:**
-   ```
-   001-short-descriptive-title.html
-   002-another-awesome-meme.html
-   003-weekend-coding.html
-   ```
-   - **Number:** 3-digit sequence (001, 002, etc.)
-   - **Title:** lowercase, hyphen-separated, descriptive
-
-3. **Organize your images:**
-   ```
-   memes/<your-handle>/images/your-image.png
-   ```
-
-4. **Use relative paths in your HTML:**
-   ```html
-   <img src="./images/your-image.png" alt="Descriptive alt text">
-   ```
-
----
-
-## 🎨 Example Meme File
-
-Here's a sample meme file structure:
-
-**File:** `memes/alice/001-deploy-friday.html`
-
-```html
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Deploy on Friday</title>
-    <style>
-        body {
-            margin: 0;
-            display: grid;
-            place-items: center;
-            height: 100vh;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            font: 700 2.5rem/1.2 'Comic Sans MS', system-ui;
-            text-align: center;
-        }
-        .meme-card {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(10px);
-            padding: 2rem;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-            max-width: 500px;
-        }
-        .meme-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin: 1rem 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="meme-card">
-        <h1>Deploying on Friday...</h1>
-        <img src="./images/ship-it.png" alt="This is fine dog in burning room" class="meme-image">
-        <p>What could possibly go wrong? 😅</p>
-    </div>
-</body>
-</html>
-```
-
----
-
-## 🔄 Update the Rotator
-
-After creating your memes, update the rotator in `script.js`:
-
-```javascript
-const MEMES = [
-    "memes/leader/001-first-meme.html",
-    "memes/leader/002-git-commit.html",
-    "memes/alice/001-deploy-friday.html",
-    "memes/alice/002-debugging.html",
-    "memes/bob/001-merge-conflict.html"
-];
-```
-
-> ⚠️ **Important:** Only the **team leader** should update `script.js` to avoid merge conflicts!
-
----
-
-## 👩‍💻 Git Workflow
-
-### Initial Setup
-```bash
-# Clone your team's repository
-git clone https://github.com/<your-username>/<team-slug>-meme-war.git
-cd <team-slug>-meme-war
-
-# Create your personal workspace
-mkdir -p memes/<your-handle>/images
-```
-
-### Creating a New Meme
-```bash
-# Create your meme file
-nano memes/<your-handle>/001-my-awesome-meme.html
-
-# Add your changes
-git add memes/<your-handle>/
-git commit -m "feat(<your-handle>): add awesome debugging meme"
+# Push your code to GitHub
 git push origin main
-```
+5. Enable GitHub Pages
+This is the most important step! It makes your meme visible on the live web.
 
-### Best Practices
-- **Commit messages:** Use format `feat(<your-handle>): description`
-- **File sizes:** Keep images under 2MB for optimal loading
-- **Testing:** Check your memes locally before pushing
-- **Collaboration:** Communicate with teammates about shared assets
+Go to the Settings tab of your GitHub repository.
 
----
+On the left sidebar, click Pages.
 
-## 🌐 Live Deployment
+Under Build and deployment, set the Source to Deploy from a branch.
 
-Once you push your changes, your team's meme collection will be live at:
+Set the Branch to main and the folder to /(root).
 
-### 🎯 Your Team's URL
-```
-https://<your-username>.github.io/<team-slug>-meme-war/
-```
+Click Save.
 
-This URL will automatically appear on the **Get-Gitty Event Page** during the competition! 🎉
+Your meme will now be live at:
+https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/
 
----
+It can take a minute or two for your site to become available after you enable Pages.
 
-## 🏆 Pro Tips for Meme Mastery
+6. You're Done! 🎉
+The competition website will automatically detect your pushed meme within a few minutes. Once it does, your team's card will change from "Meme Loading..." to displaying your live creation!
 
-- ⚡ **Keep it snappy:** Best memes are quick, witty, and relatable
-- 🎨 **Inline CSS is fine:** Keeps meme files self-contained and portable
-- 🖼️ **Image formats:** GIFs and PNGs work best for web display
-- 📱 **Mobile-friendly:** Test on different screen sizes
-- 🚀 **Performance:** Optimize images and avoid heavy animations
-- 😄 **Have fun:** Remember, it's about learning and laughing together!
+Go to the main competition website to see your meme and start collecting votes!
 
----
+🏆 How Voting Works
+Your meme will appear on the main competition website in your team's card.
 
-## 🔧 Troubleshooting
+Anyone can vote for their favorite memes by clicking the "Vote 👍" button.
 
-### Common Issues
-- **Site not updating?** Wait 2-3 minutes after pushing, GitHub Pages needs time
-- **Images not loading?** Check your relative paths and file names
-- **Memes not rotating?** Verify your paths in `script.js` match your file structure
-- **Merge conflicts?** Stick to your personal folder and coordinate with team lead
+Voting is limited to one vote per person.
 
-### Getting Help
-- Check the [GitHub Pages documentation](https://docs.github.com/en/pages)
-- Ask your workshop facilitators
-- Collaborate with your team members!
+The leaderboard on the website updates in real-time.
 
----
+🛠️ Technical Details & Tips
+Project Structure
+text
+.
+├── index.html      # The main page of your meme website
+├── styles.css      # Your custom styles
+├── script.js       # Your custom JavaScript (optional)
+└── assets/         # Folder for your images and other media
+    └── my-meme.jpg
+Need Inspiration?
+Classic Image Meme: Add an image to index.html and a funny caption.
 
-## 🎊 Ready to Meme?
+Animated CSS Meme: Use CSS animations to make elements move or change.
 
-Your team's meme empire awaits! Start creating, collaborating, and competing. May the best memes win! 🏅
+Interactive Meme: Use JavaScript to create a meme that changes when you click or hover.
 
-**Happy Meme-ing!** 🎨✨
+Video Meme: Embed a video file from your assets folder.
 
----
+Getting Help
+Git/Github Help: GitHub Docs
 
-*Built with ❤️ for the Get-Gitty Workshop*# meme-wars-template
+HTML/CSS/JS Help: MDN Web Docs
+
+Ask your workshop facilitators!
+
+❓ Frequently Asked Questions
+Q: My meme isn't showing up on the website. What do I do?
+
+Double-check your repo name. It must be exactly as provided during registration.
+
+Did you enable GitHub Pages? Go to Settings -> Pages to confirm.
+
+Did you push your code? You need to git push after making changes.
+
+Wait a few minutes. The system checks for new memes every 2 minutes.
+
+Q: Can I update my meme after I've pushed it?
+A: Yes! Simply make your changes, commit, and push again. Your live page and the competition website will update automatically. You can vote for your own meme!
+
+Q: Can my team submit more than one meme?
+A: The system displays one website per team. However, you can create a multi-page meme site! Add more HTML files (e.g., meme2.html) and link to them from your main index.html.
+
+📜 Rules & Notes
+Please keep content appropriate for all audiences.
+
+The use of web technologies (HTML, CSS, JS) is encouraged!
+
+You may use libraries and frameworks if you wish.
+
+The facilitators' decisions are final.
+
+Good luck, have fun, and may the best meme win!
+
+Remember: In Git We Trust! 🚀
