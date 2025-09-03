@@ -1,23 +1,24 @@
-:root {
-  --bg: #0b1320;
-  --fg: #f8fafc;
-  --ac: #7c3aed;
-}
+    h1 {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 3rem;
+    }
 
-html,
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto;
-  background: var(--bg);
-  color: var(--fg);
-}
+    body {
+        background-color: black;
+    }
 
-main {
-  max-width: 960px;
-  margin: 40px auto;
-  padding: 24px;
-}
+    .poster {
+        width: 50%;
+        margin-top: 100px;
+        margin-left: 25%;
+        text-align: center;
+        color: white;
+    }
 
-h1 {
-  color: var(--ac);
-}
+    .motivation_img {
+        border: 5px solid white;
+        width: 100%;
+    }
